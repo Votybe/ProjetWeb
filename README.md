@@ -1,4 +1,4 @@
 # ProjetWeb
-Maillot Aymeriric 
+Maillot Aymeric 
 Eric-Olivier Diez 
 Lionel Ferreira

@@ -1,0 +1,457 @@
+.Menu{
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction : row;
+    float: right;
+    width: 20%;
+    background: #F3F3F3;
+    width: 100%;
+    min-height: 66px;
+    line-height: 66px;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+a:hover{
+    box-shadow: 0px 0px 5px 10px white;
+    background-color: #808080;
+}
+
+a{
+    padding: 10px;
+}
+footer{
+    border-top:5px solid black;
+    background-color: #F3F3F3;
+    margin-top: 150px;
+
+}
+.txtlienWiki{
+    font-size: #F3F3F3;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+#terrain {
+    display: flex;
+    justify-content: start;
+    /*justify-content: center;*/
+}
+
+.delete {
+    height: 30px;
+    width: 30px;
+}
+
+#terrain .maillot {
+    height: 100px;
+    width: 100px;
+}
+
+#terrain .maillot:hover {
+    box-shadow: 0px 0px 5px 10px white;
+    background-color: white;
+}
+
+.flex-space-around {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-space-between {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    display: flex;
+    background-image: url("image/football.png");
+    background-size: contain;
+    max-width: 900px;
+    min-height:1300px;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+}
+
+
+.DG {
+    margin-left: 60px;
+}
+
+.DD {
+    margin-right: 90px;
+}
+
+.name{
+    max-width: 80px;
+}
+@media only screen and (max-width:750px){
+    .flex-container {
+        min-height:900px;
+        padding-top: 50px;
+    }
+    .neg-margin-top {
+        margin-top: -60px;
+    }
+
+    .margin-top{
+        margin-top: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width:800px)  and (min-width: 751px){
+    .flex-container {
+        min-height:1000px;
+    }
+
+    .neg-margin-top {
+        margin-top: -60px;
+    }
+
+    .margin-top{
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:850px) and (min-width: 801px) {
+    .flex-container {
+        min-height:1100px;
+    }
+}
+
+@media only screen and (max-width:900px) and (min-width: 851px) {
+    .flex-container {
+        min-height:1200px;
+    }
+}
+
+.margin-top{
+    margin-top: 50px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F3F3;
+}
+
+html {
+    font-family: "Verdana";
+}
+
+section {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+required {
+    margin: 5px;
+    line-height: 1.5;
+    width: 100%;
+    border: 1px solid black;
+    border: 2px dotted orange;
+}
+
+.div1 {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form {
+    padding: 20px;
+    border: 1px solid black;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: white;
+    box-shadow: 1px 1px 3px #aaa;
+}
+
+article {
+    flex: 1 200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    flex: 1;
+    border-width: 0 0 1px 0;
+    border: none;
+    border-bottom: 1px solid #E1E1E1;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+input:invalid {
+    flex: 1;
+    border-width: 0 0 1px 0;
+    border-color: red;
+    caret-color: red;
+}
+
+input:valid {
+    border-color: #56c93f;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    background-color: #7f95a3;
+    border-width: 0 0 1px 0;
+}
+
+.select select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    background: #e6e6e6;
+    color: #000000;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select:hover {
+    background: #37434a;
+    color: #ffffff;
+}
+
+.button {
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 10px;
+    background: #7f95a3;
+    padding: 10px 10px 10px 10px;
+}
+
+.button:hover {
+    background: #37434a;
+}
+
+.main {
+    padding: 20px;
+    border: 1px solid black;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: white;
+    box-shadow: 1px 1px 3px #aaa;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-around;
+
+}
+
+.Image {
+    height: 260px;
+    width: 230px;
+    box-shadow: 3px 2px black;
+}
+
+.histoire {
+    text-align: center;
+    border : 1px solid black;
+    box-shadow: 2px 2px #A5A5A1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bilan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : 1px solid black;
+    box-shadow: 2px 2px #A5A5A1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border : medium solid black;
+}
+
+tr, td {
+    border : thin solid black;
+}
+
+header{
+    border-bottom:  5px  black solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+}
+.imageSup{
+    height: 300px;
+    width: 750px;
+    
+}
+
+
+.ParisMarseille {
+  display: flex; /* or inline-flex */
+  flex-direction: center;
+  width: 100%;
+
+}
+
+.text{
+    font-size: 30px;
+    text-align: center;
+}
+
+.Paragraphequipe{
+    font-size: 20px;
+}
+
+
+.Paris, .Marseille{
+padding: 10px;
+padding-right: 160px;
+background-color: white;
+border: 2px blue solid;
+margin-top: 30px;
+justify-content: space-between;
+margin-right: 30px;
+margin-left: 30px;
+}
+
+
+.Paris{
+    padding: 5px;
+    box-shadow: 10px 5px 5px #004170;
+    border: 2px blue solid;
+    width: 50%;
+}
+
+.Marseille:hover{
+    color: white;
+    background-color: #2271b3;
+    border: 2px solid #2271b3;
+    box-shadow: 12px 12px 0 #CF8306;
+    transition: .5s;
+        width: 100%;
+
+}
+
+
+.Paris:hover{
+    color: white;
+    background-color: #2271b3;
+    border: 2px solid #2271b3;
+    box-shadow: 12px 12px 0 #CF8306;
+    transition: .5s;
+        width: 100%;
+
+}
+
+.Marseille {
+    padding: 5px;
+    box-shadow: 10px 5px 5px #2271b3;
+    border: 2px  blue solid;
+    width: 50%;
+
+
+}
+.Titrequipe{
+    text-align: center;
+}
+
+.Paragraphequipe{
+        text-align: center;
+
+
+}
+
+.ParisTableau{
+align-items: center;
+}
+
+.choix {
+    text-align: center;
+    border : 1px solid black;
+    box-shadow: 2px 2px #A5A5A1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.n {
+    border : 1px solid black;
+    box-shadow: 2px 2px #A5A5A1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nous {
+    position: center;
+}
+
+.pres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.personne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.photo {
+    height: 260px;
+    width: 230px;
+    box-shadow: 3px 2px black;
+}
+

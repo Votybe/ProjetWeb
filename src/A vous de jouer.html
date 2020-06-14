@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Les classicos : Un grand classique ! </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+  <header>
+    <img class="imageSup" src="image/supppsg.jpg">
+    <h1 class="title1"> OM-PSG : Un Grand Classique </h1>
+
+    <nav >
+      <ul class="Menu">
+        <li class="txtm"><a href="Projet WEB_2020_L2-R.html" target="_blank">Accueil</a></li>
+        <li class="txtm"><a href="Rivalité.html" target="_blank">Rivalitée</a></li>
+        <li class="txtm"><a href="A vous de jouer.html" target="_blank">A vous de jouer</a></li>
+         <li class="txtm"><a href="DerbyClassico.html" target="_blank">Classico ou Derby ?</a></li>
+        <li class="txtm"><a href="Qui sommes-nous.html" target="_blank">Qui sommes nous ?</a></li>
+      </ul>
+  </header>
+
+    <h1>Formulaire</h1>
+    <form id="form" class="form div1" method="post">
+        <div class="required article">
+            <article>
+                <div class="select">
+                    <select id="poste" required>
+						<option value="" disabled>Choisir un poste</option>
+						<option value="G">Gardien</option>
+						<option value="DCG">Def. Centre Gauche</option>
+						<option value="DCD">Def. Centre Droite</option>
+						<option value="DG">Def. Gauche</option>
+						<option value="DD">Def. Droit</option>
+						<option value="MDCG">Mil. Defensif Gauche</option>
+						<option value="MDCD">Mil. Defensif Droite</option>
+						<option value="MOC">Mil. Offensif Centre</option>
+						<option value="AG">Att. Gauche</option>
+						<option value="AD">Att. Droit</option>
+						<option value="BU">Buteur</option>
+					</select>
+                </div>
+                <input type="text" id="firstname" placeholder="Prenom" required>
+                <input type="text" id="lastname" placeholder="Nom" required>
+            </article>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="button" id="add_btn" class="button" onclick="ajouter()" value="Sur terrain">
+        </div>
+    </form>
+<p>Pour échanger des joueurs lorsque vous êtes sur le terrain, il suffit de cliquer sur un maillot (sur lequel vous avez déjà placé le nom d'un joueur) puis sur un autre maillot  (sur lequel vous avez égalément déjà placé le nom d'un joueur) </p>
+    <p class="txtlienWiki">Ici, vous trouverez des liens qui vous emmèneront là ou on joué tous les joueurs de Paris et Marseille.</p>
+
+  
+    <p>Liste des joueurs de Marseille <a  href="https://fr.wikipedia.org/wiki/Liste_des_joueurs_de_l%27Olympique_de_Marseille" target="_blank">Ici</a></p>
+    <p>Liste des joueurs de Paris<a  href="https://fr.wikipedia.org/wiki/Liste_des_joueurs_du_Paris_Saint-Germain" target="_blank">Ici</a></p>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="terrain" class="flex-container">      
+      <div class="flex-center BU">
+      	<div>
+          <img class="maillot" src="image/icone.png">
+          <img class="delete" src="image/delete.png" onclick="supprimer('BU')">
+          <p class="name"></p>
+        </div>
+      </div>
+      <div class="flex-space-around">
+        <div class="AG">
+            <img class="maillot" src="image/icone.png">
+            <img class="delete" src="image/delete.png" onclick="supprimer('AG')">
+            <p class="name"></p>
+        </div>
+        <div class="AD">
+            <img class="maillot" src="image/icone.png">
+            <img class="delete" src="image/delete.png" onclick="supprimer('AD')">
+            <p class="name"></p>
+        </div>
+      </div>
+      <div class="flex-center MOC">
+      	<div>
+            <img class="maillot" src="image/icone.png">
+            <img class="delete" src="image/delete.png" onclick="supprimer('MOC')">
+            <p class="name"></p>
+        </div>
+      </div>
+      <div class="flex-center margin-top">
+        <div class="MDCG">
+            <img class="maillot" src="image/icone.png">
+            <img class="delete" src="image/delete.png" onclick="supprimer('MDCG')">
+            <p class="name"></p>
+        </div>
+        <div class="MDCD">
+            <img class="maillot" src="image/icone.png">
+            <img class="delete" src="image/delete.png" onclick="supprimer('MDCD')">
+            <p class="name"></p>
+        </div>
+      </div>
+      <div class="flex-space-between neg-margin-top">
+	      <div class="DG">
+	          <img class="maillot" src="image/icone.png">
+	          <img class="delete" src="image/delete.png" onclick="supprimer('DG')">
+	          <p class="name"></p>
+	      </div>
+	      <div class="DD">
+	          <img class="maillot" src="image/icone.png">
+	          <img class="delete" src="image/delete.png" onclick="supprimer('DD')">
+	          <p class="name"></p>
+	      </div>
+	    </div>
+	    <div class="flex-center neg-margin-top">
+		    <div class="DCG">
+	          <img class="maillot" src="image/icone.png">
+	          <img class="delete" src="image/delete.png" onclick="supprimer('DCG')">
+	          <p class="name"></p>
+	      </div>
+	      <div class="DCD">
+	          <img class="maillot" src="image/icone.png">
+	          <img class="delete" src="image/delete.png" onclick="supprimer('DCD')">
+	          <p class="name"></p>
+	      </div>
+	    </div>
+	    <div class="flex-center G">
+	    	<div>
+          <img class="maillot" src="image/icone.png">
+          <img class="delete" src="image/delete.png" onclick="supprimer('G')">
+          <p class="name"></p>
+      	</div>
+	    </div>
+    </div>
+
+    <script type="text/javascript" src="js.js"></script>
+</body>
+
+</html>
